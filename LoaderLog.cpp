@@ -75,7 +75,7 @@ int main()
     }
     else
     {
-        while (*cmdLine != ' ')
+        while (*cmdLine != ' ' && *cmdLine != 0)
         {
             cmdLine++;
         }

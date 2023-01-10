@@ -129,9 +129,6 @@
   <ItemGroup>
     <ClCompile Include="LoaderLog.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="LoaderLog.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
