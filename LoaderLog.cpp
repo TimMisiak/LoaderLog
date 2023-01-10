@@ -88,7 +88,6 @@ int main()
         }
     }
 
-    // Probably need to strip the beginning.
     STARTUPINFO si = { 0 };
     si.cb = sizeof(STARTUPINFO);
     PROCESS_INFORMATION pi;

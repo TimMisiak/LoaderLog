@@ -30,10 +30,12 @@ Other debug event: 6
 ...
 ```
 
-LoaderLog acts uses the debugging APIs, so it is not allow debugging the target application at the same time.
+LoaderLog acts uses the debugging APIs such as DEBUG_ONLY_THIS_PROCESS with WaitForDebugEvent, so it does not allow debugging the target application at the same time.
 
-You can use IFEO (Image File Execution Options) to have LoaderLog always enabled. For instance:
+You can use IFEO (Image File Execution Options) to have LoaderLog always enabled for a binary. For instance:
 
 ```
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\dotnet.exe" /v "Debugger" /t REG_SZ /d "C:\Tools\LoaderLog.exe"
 ```
+
+This tool has had minimal testing, but I used it to successfully diagnose a DLL load failure in a pipeline where I couldn't use a debugger, so I thought it might be helpful to other people as well.
