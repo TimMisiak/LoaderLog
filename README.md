@@ -8,7 +8,7 @@ This tool can be used to capture debug output and loader logs (also known as "sh
 LoaderLog <command line>
 ```
 
-This will create a DebugLog-<pid>.txt file in the current working directory, containing a log that looks like this:
+This will create a `DebugLog-<pid>.txt` file in the current working directory, containing a log that looks like this:
 
 ```
 Child command line is: notepad.exe
